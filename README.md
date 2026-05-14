@@ -1,2 +1,2 @@
 # ParkSverige
-ParkSverige is a smart parking assistant for drivers in Sweden. Register your vehicle, explore nearby parking zones, and instantly get accurate information about parking rules, allowed times, restrictions, and availability. Designed to make parking simpler, faster, and stress-free on both iPhone and Android.
+ParkSverige is a smart parking assistant designed for drivers across Sweden. Users can register their vehicle, check nearby parking areas, and instantly get clear information about parking availability, allowed times, restrictions, and regulations. The app aims to simplify everyday parking with a smooth and user-friendly experience on both iPhone and Android.
