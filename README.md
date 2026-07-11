@@ -2,6 +2,11 @@
 
 ParkSverige is a premium parking intelligence platform designed for drivers in Sweden. The product starts with Stockholm and helps users understand where they can legally park, what rules apply, when restrictions begin, and how likely an area is to have space available.
 
+
+## Demo
+
+![ParkSverige demo](./demo.png)
+
 The long-term goal is to support:
 
 - Web
@@ -23,6 +28,8 @@ The product is being planned as a scalable, subscription-ready platform with:
 
 - [Architecture and Roadmap](docs/architecture-roadmap.md)
 - [Progress Tracker](docs/progress-tracker.md)
+- [Postgres Serving Schema](docs/serving-schema.md)
+- [Local Setup Guide](docs/local-setup.md)
 
 ## Foundation Now Added
 
@@ -35,6 +42,27 @@ Version 0 scaffolding is now in place with:
 - `packages/*` for shared contracts, design tokens, analytics, and API client strategy
 - `data-platform/databricks` for ingestion and analytics workflows
 - `infra/azure` for deployment and infrastructure definitions
+
+The first vertical slice is also started with:
+
+- a draft PostgreSQL + PostGIS serving schema
+- API stubs for `auth`, `vehicles`, `parking/search`, and `parking/zones/:id`
+- richer shared contracts for sessions, zones, search, and rules
+- a more product-shaped web foundation page
+
+## Free Prototype Path
+
+The prototype path is now designed to avoid paid map setup:
+
+- `npm` workspaces instead of `pnpm`, to avoid Corepack issues
+- OpenStreetMap-based tiles for the first visual prototype
+- no Mapbox account required for the first visible version
+- mobile is temporarily excluded from root installs until Expo dependency versions are aligned
+
+Important:
+
+- OpenStreetMap tiles are fine for local development and light prototype use
+- they should not be used for offline downloads or heavy production traffic
 
 ## Recommended Target Repository Shape
 
