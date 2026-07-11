@@ -413,8 +413,14 @@ Search should combine:
 Recommended search stack for MVP:
 
 - PostgreSQL + PostGIS for nearby and spatial lookup
-- geocoding provider such as Mapbox
+- mock search first, then a low-cost or open geocoding layer once the UX is validated
 - Redis cache for popular queries
+
+Recommended free-first map approach for the prototype:
+
+- web rendering with an OpenStreetMap-compatible map library
+- public OSM tiles for local development and light prototype usage
+- provider abstraction so we can upgrade later without rewriting the product
 
 Future enhancement:
 
