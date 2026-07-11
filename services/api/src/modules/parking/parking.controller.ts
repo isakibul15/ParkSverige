@@ -1,18 +1,28 @@
-import { Controller, Get, Query } from "@nestjs/common";
+import { Controller, Get, NotFoundException, Param, Query } from "@nestjs/common";
+import { ParkingService } from "./parking.service";
 
 @Controller("parking")
 export class ParkingController {
+  constructor(private readonly parkingService: ParkingService) {}
+
+  @Get("search")
+  search(@Query("q") q?: string) {
+    return this.parkingService.search(q);
+  }
+
   @Get("nearby")
   getNearby(@Query("lat") lat?: string, @Query("lng") lng?: string) {
-    return {
-      status: "stub",
-      city: "stockholm",
-      message: "Nearby parking lookup will be backed by PostGIS-served zone data.",
-      input: {
-        lat,
-        lng
-      }
-    };
+    return this.parkingService.getNearby(lat, lng);
+  }
+
+  @Get("zones/:zoneId")
+  getZone(@Param("zoneId") zoneId: string) {
+    const zone = this.parkingService.getZone(zoneId);
+
+    if (!zone) {
+      throw new NotFoundException(`Zone ${zoneId} was not found.`);
+    }
+
+    return zone;
   }
 }
-
