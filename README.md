@@ -24,6 +24,18 @@ The product is being planned as a scalable, subscription-ready platform with:
 - [Architecture and Roadmap](docs/architecture-roadmap.md)
 - [Progress Tracker](docs/progress-tracker.md)
 
+## Foundation Now Added
+
+Version 0 scaffolding is now in place with:
+
+- `apps/web` for the Next.js customer web app
+- `apps/mobile` for the Expo mobile app
+- `services/api` for the NestJS backend
+- `services/workers` for notifications and scheduled jobs
+- `packages/*` for shared contracts, design tokens, analytics, and API client strategy
+- `data-platform/databricks` for ingestion and analytics workflows
+- `infra/azure` for deployment and infrastructure definitions
+
 ## Recommended Target Repository Shape
 
 As implementation begins, this repo should evolve toward a monorepo with a clear separation between apps, shared packages, backend services, and data-platform work:
@@ -49,4 +61,4 @@ docs/
 
 ## Current Status
 
-The current repository is intentionally lightweight. The next milestone is to establish the foundational architecture, design system, and delivery plan before implementation accelerates.
+The project has now moved from planning into a real foundation phase. Legacy placeholder folders like `Backend/` and `UI/` are still present for reference, while the new monorepo structure becomes the main implementation path.
