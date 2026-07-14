@@ -15,8 +15,8 @@
       "@parksverige/shared-types": ["packages/shared-types/src"],
       "@parksverige/design-system": ["packages/design-system/src"],
       "@parksverige/api-client": ["packages/api-client/src"],
-      "@parksverige/analytics": ["packages/analytics/src"]
+      "@parksverige/analytics": ["packages/analytics/src"],
+      "@parksverige/prototype-data": ["packages/prototype-data/src"]
     }
   }
 }
-
