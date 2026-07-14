@@ -1,0 +1,23 @@
+{
+  "name": "@parksverige/api",
+  "private": true,
+  "scripts": {
+    "dev": "nest start --watch",
+    "build": "nest build",
+    "lint": "echo \"No API lint configured yet\"",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "test": "echo \"No API tests configured yet\""
+  },
+  "dependencies": {
+    "@parksverige/prototype-data": "0.1.0",
+    "@parksverige/shared-types": "0.1.0",
+    "@nestjs/common": "^10.4.0",
+    "@nestjs/core": "^10.4.0",
+    "@nestjs/platform-express": "^10.4.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.4.5"
+  }
+}
