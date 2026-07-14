@@ -1,0 +1,19 @@
+{
+  "name": "@parksverige/workers",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc --project tsconfig.json",
+    "lint": "echo \"No worker lint configured yet\"",
+    "stockholm:preview": "npm run build && node dist/services/workers/src/index.js preview-stockholm-rules",
+    "stockholm:refresh-sources": "npm run build && node dist/services/workers/src/index.js stockholm-source-refresh",
+    "stockholm:sync-sources": "npm run build && node dist/services/workers/src/index.js stockholm-source-sync",
+    "stockholm:simulate": "npm run build && node dist/services/workers/src/index.js stockholm-rule-pipeline",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "test": "echo \"No worker tests configured yet\""
+  },
+  "devDependencies": {
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
