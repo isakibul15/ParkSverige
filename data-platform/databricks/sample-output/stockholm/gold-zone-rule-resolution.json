@@ -1,0 +1,53 @@
+[
+  {
+    "zone_id": "zone_sveavagen_01",
+    "external_zone_key": "zone_sveavagen_01",
+    "city_slug": "stockholm",
+    "resolution_strategy": "official_baseline_with_local_override",
+    "effective_schedule_label": "Mon-Fri 08:00-18:00",
+    "effective_price_label": "25 SEK / h",
+    "fee_required": true,
+    "permit_required": false,
+    "max_duration_minutes": 120,
+    "primary_source_kind": "local_regulation",
+    "primary_source_label": "Stockholm parking rules",
+    "rule_sources_json": "[{\"id\":\"stockholm-rules-2026\",\"label\":\"Stockholm parking rules\",\"kind\":\"local_regulation\",\"publisher\":\"Stockholms stad\",\"sourceUrl\":\"https://parkering.stockholm/parkeringsregler/\",\"checkedAt\":\"2026-07-11T20:16:00Z\",\"note\":\"Used as the municipal rule reference layer for explanatory copy.\"}]",
+    "resolution_notes_json": "[\"Rule is currently derived from Stockholm municipality tariff and rule references.\",\"Street signage should still be treated as the final authority for payment and timing.\"]",
+    "source_updated_at": "2026-07-11T18:53:00Z",
+    "published_at": "2026-07-11T21:55:55.519Z"
+  },
+  {
+    "zone_id": "zone_kungsholmen_02",
+    "external_zone_key": "zone_kungsholmen_02",
+    "city_slug": "stockholm",
+    "resolution_strategy": "official_baseline_with_local_override",
+    "effective_schedule_label": "Taxa 2 visitor parking",
+    "effective_price_label": "31 SEK / h daytime · 20 SEK / h off-peak",
+    "fee_required": true,
+    "permit_required": false,
+    "max_duration_minutes": 240,
+    "primary_source_kind": "official_tariff",
+    "primary_source_label": "Stockholm tariff area baseline",
+    "rule_sources_json": "[{\"id\":\"stockholm-tariff-2026\",\"label\":\"Stockholm tariff area baseline\",\"kind\":\"official_tariff\",\"publisher\":\"Stockholms stad\",\"sourceUrl\":\"https://parkering.stockholm/betala-parkering/taxeomraden-avgifter/\",\"checkedAt\":\"2026-07-11T20:15:00Z\",\"note\":\"Official tariff baseline. Street signage remains the final authority.\"}]",
+    "resolution_notes_json": "[\"Rule is currently derived from Stockholm municipality tariff and rule references.\",\"Street signage should still be treated as the final authority for payment and timing.\"]",
+    "source_updated_at": "2026-07-11T20:15:00Z",
+    "published_at": "2026-07-11T21:55:55.519Z"
+  },
+  {
+    "zone_id": "zone_kth_03",
+    "external_zone_key": "zone_kth_03",
+    "city_slug": "stockholm",
+    "resolution_strategy": "official_baseline_with_local_override",
+    "effective_schedule_label": "Daily 07:00-19:00 paid, free outside these hours",
+    "effective_price_label": "Fee 07:00-19:00 · free after 19:00",
+    "fee_required": true,
+    "permit_required": false,
+    "primary_source_kind": "official_tariff",
+    "primary_source_label": "Stockholm tariff area baseline",
+    "secondary_source_label": "KTH local sign override",
+    "rule_sources_json": "[{\"id\":\"stockholm-tariff-2026\",\"label\":\"Stockholm tariff area baseline\",\"kind\":\"official_tariff\",\"publisher\":\"Stockholms stad\",\"sourceUrl\":\"https://parkering.stockholm/betala-parkering/taxeomraden-avgifter/\",\"checkedAt\":\"2026-07-11T20:15:00Z\",\"note\":\"Official tariff baseline. Street signage remains the final authority.\"},{\"id\":\"kth-valhallavagen-local-override\",\"label\":\"KTH local sign override\",\"kind\":\"sign_override\",\"publisher\":\"ParkSverige prototype curation\",\"checkedAt\":\"2026-07-11T19:24:00Z\",\"note\":\"Driver-confirmed local timing for the KTH Valhallavagen edge used until live sign ingestion exists.\"}]",
+    "resolution_notes_json": "[\"Official Stockholm tariff data is used as the baseline.\",\"The KTH zone currently applies a local override because on-street signage can be stricter or more specific than area tariffs.\",\"This override should be replaced by municipality sign-level ingestion in a later data phase.\"]",
+    "source_updated_at": "2026-07-11T19:24:00Z",
+    "published_at": "2026-07-11T21:55:55.519Z"
+  }
+]
