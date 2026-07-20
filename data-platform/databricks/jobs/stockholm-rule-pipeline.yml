@@ -1,0 +1,42 @@
+resources:
+  jobs:
+    stockholm_rule_pipeline:
+      name: parksverige-stockholm-rule-pipeline
+      tags:
+        domain: parking
+        city: stockholm
+        pipeline: rule-resolution
+      schedule:
+        quartz_cron_expression: "0 0 4 * * ?"
+        timezone_id: Europe/Stockholm
+      tasks:
+        - task_key: ingest_reference_sources
+          notebook_task:
+            notebook_path: ../notebooks/stockholm_rule_pipeline.py
+            base_parameters:
+              pipeline_stage: bronze
+
+        - task_key: normalize_rule_sources
+          depends_on:
+            - task_key: ingest_reference_sources
+          notebook_task:
+            notebook_path: ../notebooks/stockholm_rule_pipeline.py
+            base_parameters:
+              pipeline_stage: silver
+
+        - task_key: resolve_zone_rules
+          depends_on:
+            - task_key: normalize_rule_sources
+          notebook_task:
+            notebook_path: ../notebooks/stockholm_rule_pipeline.py
+            base_parameters:
+              pipeline_stage: gold
+
+        - task_key: run_quality_checks
+          depends_on:
+            - task_key: resolve_zone_rules
+          sql_task:
+            query:
+              query_text: |
+                -- Replace with Databricks SQL task bindings in deployment.
+                SELECT 'run data-platform/databricks/quality-checks/stockholm-rule-resolution.sql' AS next_step;
