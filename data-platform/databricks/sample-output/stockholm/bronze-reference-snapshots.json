@@ -1,0 +1,32 @@
+[
+  {
+    "ingestion_batch_id": "stockholm_20260711",
+    "source_id": "stockholm_tariff_areas",
+    "source_url": "https://parkering.stockholm/betala-parkering/taxeomraden-avgifter/",
+    "source_checked_at": "2026-07-11T21:52:28.811Z",
+    "content_format": "json",
+    "raw_payload": "{\"sourceId\":\"stockholm_tariff_areas\",\"sourceUrl\":\"https://parkering.stockholm/betala-parkering/taxeomraden-avgifter/\",\"checkedAt\":\"2026-07-11T21:52:28.811Z\",\"pageUpdatedAt\":\"2026-02-10T00:00:00Z\",\"notes\":[\"Stockholm has five main tariff areas.\",\"Street signage on site decides the final applicable fee.\"],\"tariffAreas\":[{\"code\":\"2\",\"label\":\"Taxeområde 2\",\"visitorParking\":[{\"dayType\":\"weekday\",\"startLocalTime\":\"07:00\",\"endLocalTime\":\"21:00\",\"priceMinorSek\":3100,\"priceLabel\":\"31 SEK / h\"},{\"dayType\":\"weekday_off_peak\",\"startLocalTime\":\"21:00\",\"endLocalTime\":\"07:00\",\"priceMinorSek\":2000,\"priceLabel\":\"20 SEK / h\"},{\"dayType\":\"pre_holiday_weekday\",\"startLocalTime\":\"09:00\",\"endLocalTime\":\"19:00\",\"priceMinorSek\":3100,\"priceLabel\":\"31 SEK / h\"},{\"dayType\":\"pre_holiday_weekday_off_peak\",\"startLocalTime\":\"19:00\",\"endLocalTime\":\"09:00\",\"priceMinorSek\":2000,\"priceLabel\":\"20 SEK / h\"},{\"dayType\":\"holiday\",\"startLocalTime\":\"09:00\",\"endLocalTime\":\"19:00\",\"priceMinorSek\":3100,\"priceLabel\":\"31 SEK / h\"},{\"dayType\":\"holiday_off_peak\",\"startLocalTime\":\"19:00\",\"endLocalTime\":\"09:00\",\"priceMinorSek\":2000,\"priceLabel\":\"20 SEK / h\"}]},{\"code\":\"3\",\"label\":\"Taxeområde 3\",\"visitorParking\":[{\"dayType\":\"weekday\",\"startLocalTime\":\"07:00\",\"endLocalTime\":\"19:00\",\"priceMinorSek\":2000,\"priceLabel\":\"20 SEK / h\"},{\"dayType\":\"pre_holiday_weekday\",\"startLocalTime\":\"11:00\",\"endLocalTime\":\"17:00\",\"priceMinorSek\":1500,\"priceLabel\":\"15 SEK / h\"},{\"dayType\":\"off_peak\",\"startLocalTime\":\"19:00\",\"endLocalTime\":\"07:00\",\"priceMinorSek\":0,\"priceLabel\":\"Ingen avgift\"}]},{\"code\":\"4\",\"label\":\"Taxeområde 4\",\"visitorParking\":[{\"dayType\":\"weekday\",\"startLocalTime\":\"07:00\",\"endLocalTime\":\"19:00\",\"priceMinorSek\":1000,\"priceLabel\":\"10 SEK / h\"},{\"dayType\":\"pre_holiday_weekday\",\"startLocalTime\":\"11:00\",\"endLocalTime\":\"17:00\",\"priceMinorSek\":1000,\"priceLabel\":\"10 SEK / h\"},{\"dayType\":\"off_peak\",\"startLocalTime\":\"19:00\",\"endLocalTime\":\"07:00\",\"priceMinorSek\":0,\"priceLabel\":\"Ingen avgift\"}]},{\"code\":\"5\",\"label\":\"Taxeområde 5\",\"visitorParking\":[{\"dayType\":\"weekday\",\"startLocalTime\":\"07:00\",\"endLocalTime\":\"19:00\",\"priceMinorSek\":500,\"priceLabel\":\"5 SEK / h\"},{\"dayType\":\"off_peak\",\"startLocalTime\":\"19:00\",\"endLocalTime\":\"07:00\",\"priceMinorSek\":0,\"priceLabel\":\"Ingen avgift\"}]},{\"code\":\"9\",\"label\":\"Taxeområde 9\",\"visitorParking\":[{\"dayType\":\"weekday\",\"startLocalTime\":\"07:00\",\"endLocalTime\":\"22:00\",\"priceMinorSek\":1000,\"priceLabel\":\"10 SEK / h\"},{\"dayType\":\"pre_holiday_weekday\",\"startLocalTime\":\"07:00\",\"endLocalTime\":\"22:00\",\"priceMinorSek\":1000,\"priceLabel\":\"10 SEK / h\"},{\"dayType\":\"holiday\",\"startLocalTime\":\"07:00\",\"endLocalTime\":\"22:00\",\"priceMinorSek\":1000,\"priceLabel\":\"10 SEK / h\"},{\"dayType\":\"off_peak\",\"startLocalTime\":\"22:00\",\"endLocalTime\":\"07:00\",\"priceMinorSek\":0,\"priceLabel\":\"Ingen avgift\"}]}]}",
+    "payload_sha256": "7aee108c",
+    "ingested_at": "2026-07-11T21:55:55.519Z"
+  },
+  {
+    "ingestion_batch_id": "stockholm_20260711",
+    "source_id": "stockholm_parking_rules",
+    "source_url": "https://parkering.stockholm/parkeringsregler/",
+    "source_checked_at": "2026-07-11T20:16:00Z",
+    "content_format": "json",
+    "raw_payload": "{\"sourceId\":\"stockholm_parking_rules\",\"sourceUrl\":\"https://parkering.stockholm/parkeringsregler/\",\"checkedAt\":\"2026-07-11T20:16:00Z\",\"rules\":[{\"ruleId\":\"street_signage_authority\",\"scope\":\"citywide\",\"parkingAllowed\":true,\"streetCleaning\":false,\"restrictionLabel\":\"Street signage determines the applicable parking rule on site.\"},{\"ruleId\":\"pay_before_leaving\",\"scope\":\"citywide\",\"parkingAllowed\":true,\"streetCleaning\":false,\"restrictionLabel\":\"Payment is required during the signed paid window.\"}],\"zoneReferences\":[{\"zoneId\":\"zone_sveavagen_01\",\"label\":\"Sveavagen North reference\",\"scheduleLabel\":\"Mon-Fri 08:00-18:00\",\"priceLabel\":\"25 SEK / h\",\"maxDurationMinutes\":120}]}",
+    "payload_sha256": "75f8c4f3",
+    "ingested_at": "2026-07-11T21:55:55.519Z"
+  },
+  {
+    "ingestion_batch_id": "stockholm_20260711",
+    "source_id": "stockholm_sign_overrides",
+    "source_url": "internal://parksverige/stockholm/sign-overrides",
+    "source_checked_at": "2026-07-11T19:24:00Z",
+    "content_format": "json",
+    "raw_payload": "{\"sourceId\":\"stockholm_sign_overrides\",\"checkedAt\":\"2026-07-11T19:24:00Z\",\"overrides\":[{\"overrideId\":\"kth-valhallavagen-local-override\",\"zoneId\":\"zone_kth_03\",\"locationLabel\":\"KTH Valhallavagen Edge\",\"scheduleLabel\":\"Daily 07:00-19:00 paid, free outside these hours\",\"priceLabel\":\"Fee 07:00-19:00 · free after 19:00\",\"feeRequired\":true,\"permitRequired\":false,\"sourceLabel\":\"KTH local sign override\",\"sourceNote\":\"Driver-confirmed local timing used until live sign ingestion exists.\"}]}",
+    "payload_sha256": "8b2c40cf",
+    "ingested_at": "2026-07-11T21:55:55.519Z"
+  }
+]
