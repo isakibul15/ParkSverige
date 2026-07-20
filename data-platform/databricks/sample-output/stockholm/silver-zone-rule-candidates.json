@@ -1,0 +1,59 @@
+[
+  {
+    "zone_id": "zone_kungsholmen_02",
+    "city_slug": "stockholm",
+    "candidate_kind": "official_tariff",
+    "schedule_label": "Taxeområde 2 visitor parking",
+    "price_label": "31 SEK / h 07:00-21:00 · 20 SEK / h 21:00-07:00 · 31 SEK / h 09:00-19:00 · 20 SEK / h 19:00-09:00 · 31 SEK / h 09:00-19:00 · 20 SEK / h 19:00-09:00",
+    "fee_required": true,
+    "permit_required": false,
+    "precedence_rank": 1,
+    "source_label": "Stockholm tariff area baseline",
+    "source_url": "https://parkering.stockholm/betala-parkering/taxeomraden-avgifter/",
+    "source_checked_at": "2026-07-11T21:52:28.811Z",
+    "normalized_at": "2026-07-11T21:55:55.519Z"
+  },
+  {
+    "zone_id": "zone_kth_03",
+    "city_slug": "stockholm",
+    "candidate_kind": "official_tariff",
+    "schedule_label": "Taxeområde 3 visitor parking",
+    "price_label": "20 SEK / h 07:00-19:00 · 15 SEK / h 11:00-17:00 · Ingen avgift 19:00-07:00",
+    "fee_required": true,
+    "permit_required": false,
+    "precedence_rank": 1,
+    "source_label": "Stockholm tariff area baseline",
+    "source_url": "https://parkering.stockholm/betala-parkering/taxeomraden-avgifter/",
+    "source_checked_at": "2026-07-11T21:52:28.811Z",
+    "normalized_at": "2026-07-11T21:55:55.519Z"
+  },
+  {
+    "zone_id": "zone_sveavagen_01",
+    "city_slug": "stockholm",
+    "candidate_kind": "local_regulation",
+    "schedule_label": "Mon-Fri 08:00-18:00",
+    "price_label": "25 SEK / h",
+    "fee_required": true,
+    "permit_required": false,
+    "max_duration_minutes": 120,
+    "precedence_rank": 1,
+    "source_label": "Stockholm parking rules",
+    "source_url": "https://parkering.stockholm/parkeringsregler/",
+    "source_checked_at": "2026-07-11T20:16:00Z",
+    "normalized_at": "2026-07-11T21:55:55.519Z"
+  },
+  {
+    "zone_id": "zone_kth_03",
+    "city_slug": "stockholm",
+    "candidate_kind": "sign_override",
+    "schedule_label": "Daily 07:00-19:00 paid, free outside these hours",
+    "price_label": "Fee 07:00-19:00 · free after 19:00",
+    "fee_required": true,
+    "permit_required": false,
+    "precedence_rank": 2,
+    "source_label": "KTH local sign override",
+    "source_url": "internal://parksverige/stockholm/sign-overrides",
+    "source_checked_at": "2026-07-11T19:24:00Z",
+    "normalized_at": "2026-07-11T21:55:55.519Z"
+  }
+]
