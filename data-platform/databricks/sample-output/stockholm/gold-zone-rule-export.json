@@ -1,0 +1,43 @@
+[
+  {
+    "zone_id": "zone_sveavagen_01",
+    "external_zone_key": "zone_sveavagen_01",
+    "zone_name": "Sveavagen",
+    "city_slug": "stockholm",
+    "parking_allowed": true,
+    "fee_required": true,
+    "permit_required": false,
+    "max_duration_minutes": 120,
+    "price_label": "25 SEK / h",
+    "restriction_label": "Mon-Fri 08:00-18:00",
+    "source_updated_at": "2026-07-11T18:53:00Z",
+    "published_at": "2026-07-11T21:55:55.519Z"
+  },
+  {
+    "zone_id": "zone_kungsholmen_02",
+    "external_zone_key": "zone_kungsholmen_02",
+    "zone_name": "Kungsholmen",
+    "city_slug": "stockholm",
+    "parking_allowed": true,
+    "fee_required": true,
+    "permit_required": false,
+    "max_duration_minutes": 240,
+    "price_label": "31 SEK / h daytime · 20 SEK / h off-peak",
+    "restriction_label": "Taxa 2 visitor parking",
+    "source_updated_at": "2026-07-11T20:15:00Z",
+    "published_at": "2026-07-11T21:55:55.519Z"
+  },
+  {
+    "zone_id": "zone_kth_03",
+    "external_zone_key": "zone_kth_03",
+    "zone_name": "KTH Royal Institute of Technology",
+    "city_slug": "stockholm",
+    "parking_allowed": true,
+    "fee_required": true,
+    "permit_required": false,
+    "price_label": "Fee 07:00-19:00 · free after 19:00",
+    "restriction_label": "Daily 07:00-19:00 paid, free outside these hours",
+    "source_updated_at": "2026-07-11T19:24:00Z",
+    "published_at": "2026-07-11T21:55:55.519Z"
+  }
+]
