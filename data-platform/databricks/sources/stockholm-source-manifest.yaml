@@ -1,0 +1,37 @@
+city: stockholm
+country_code: SE
+timezone: Europe/Stockholm
+
+sources:
+  - source_id: stockholm_tariff_areas
+    publisher: Stockholms stad
+    source_kind: official_tariff
+    url: https://parkering.stockholm/betala-parkering/taxeomraden-avgifter/
+    refresh_policy: daily
+    ingestion_mode: reference_snapshot
+    trust_note: Tariff areas provide the official baseline for pricing windows.
+
+  - source_id: stockholm_parking_rules
+    publisher: Stockholms stad
+    source_kind: local_regulation
+    url: https://parkering.stockholm/parkeringsregler/
+    refresh_policy: daily
+    ingestion_mode: reference_snapshot
+    trust_note: Municipality rules provide parking context and explanatory logic.
+
+  - source_id: stockholm_sign_overrides
+    publisher: ParkSverige curated until live sign ingestion exists
+    source_kind: sign_override
+    url: internal://parksverige/stockholm/sign-overrides
+    refresh_policy: on_change
+    ingestion_mode: curated_seed
+    trust_note: Use only where a local sign or verified local rule is more precise than the baseline.
+
+resolution_order:
+  - official_tariff
+  - local_regulation
+  - sign_override
+
+serving_targets:
+  - gold.stockholm_zone_rule_resolution
+  - gold.stockholm_zone_rule_export
