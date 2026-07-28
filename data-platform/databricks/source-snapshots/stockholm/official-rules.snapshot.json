@@ -1,0 +1,30 @@
+{
+  "sourceId": "stockholm_parking_rules",
+  "sourceUrl": "https://parkering.stockholm/parkeringsregler/",
+  "checkedAt": "2026-07-11T20:16:00Z",
+  "rules": [
+    {
+      "ruleId": "street_signage_authority",
+      "scope": "citywide",
+      "parkingAllowed": true,
+      "streetCleaning": false,
+      "restrictionLabel": "Street signage determines the applicable parking rule on site."
+    },
+    {
+      "ruleId": "pay_before_leaving",
+      "scope": "citywide",
+      "parkingAllowed": true,
+      "streetCleaning": false,
+      "restrictionLabel": "Payment is required during the signed paid window."
+    }
+  ],
+  "zoneReferences": [
+    {
+      "zoneId": "zone_sveavagen_01",
+      "label": "Sveavagen North reference",
+      "scheduleLabel": "Mon-Fri 08:00-18:00",
+      "priceLabel": "25 SEK / h",
+      "maxDurationMinutes": 120
+    }
+  ]
+}
