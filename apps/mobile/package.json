@@ -1,0 +1,19 @@
+{
+  "name": "@parksverige/mobile",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "dev": "expo start",
+    "build": "echo \"Use EAS or native builds when mobile CI is added\"",
+    "lint": "echo \"No mobile lint configured yet\"",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "test": "echo \"No mobile tests configured yet\""
+  },
+  "dependencies": {
+    "@parksverige/design-system": "0.1.0",
+    "expo": "^52.0.0",
+    "expo-router": "^4.0.0",
+    "react": "^19.0.0",
+    "react-native": "^0.76.0"
+  }
+}
