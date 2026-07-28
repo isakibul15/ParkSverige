@@ -1,0 +1,168 @@
+{
+  "sourceId": "stockholm_tariff_areas",
+  "sourceUrl": "https://parkering.stockholm/betala-parkering/taxeomraden-avgifter/",
+  "checkedAt": "2026-07-11T21:52:28.811Z",
+  "pageUpdatedAt": "2026-02-10T00:00:00Z",
+  "notes": [
+    "Stockholm has five main tariff areas.",
+    "Street signage on site decides the final applicable fee."
+  ],
+  "tariffAreas": [
+    {
+      "code": "2",
+      "label": "Taxeområde 2",
+      "visitorParking": [
+        {
+          "dayType": "weekday",
+          "startLocalTime": "07:00",
+          "endLocalTime": "21:00",
+          "priceMinorSek": 3100,
+          "priceLabel": "31 SEK / h"
+        },
+        {
+          "dayType": "weekday_off_peak",
+          "startLocalTime": "21:00",
+          "endLocalTime": "07:00",
+          "priceMinorSek": 2000,
+          "priceLabel": "20 SEK / h"
+        },
+        {
+          "dayType": "pre_holiday_weekday",
+          "startLocalTime": "09:00",
+          "endLocalTime": "19:00",
+          "priceMinorSek": 3100,
+          "priceLabel": "31 SEK / h"
+        },
+        {
+          "dayType": "pre_holiday_weekday_off_peak",
+          "startLocalTime": "19:00",
+          "endLocalTime": "09:00",
+          "priceMinorSek": 2000,
+          "priceLabel": "20 SEK / h"
+        },
+        {
+          "dayType": "holiday",
+          "startLocalTime": "09:00",
+          "endLocalTime": "19:00",
+          "priceMinorSek": 3100,
+          "priceLabel": "31 SEK / h"
+        },
+        {
+          "dayType": "holiday_off_peak",
+          "startLocalTime": "19:00",
+          "endLocalTime": "09:00",
+          "priceMinorSek": 2000,
+          "priceLabel": "20 SEK / h"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "label": "Taxeområde 3",
+      "visitorParking": [
+        {
+          "dayType": "weekday",
+          "startLocalTime": "07:00",
+          "endLocalTime": "19:00",
+          "priceMinorSek": 2000,
+          "priceLabel": "20 SEK / h"
+        },
+        {
+          "dayType": "pre_holiday_weekday",
+          "startLocalTime": "11:00",
+          "endLocalTime": "17:00",
+          "priceMinorSek": 1500,
+          "priceLabel": "15 SEK / h"
+        },
+        {
+          "dayType": "off_peak",
+          "startLocalTime": "19:00",
+          "endLocalTime": "07:00",
+          "priceMinorSek": 0,
+          "priceLabel": "Ingen avgift"
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "label": "Taxeområde 4",
+      "visitorParking": [
+        {
+          "dayType": "weekday",
+          "startLocalTime": "07:00",
+          "endLocalTime": "19:00",
+          "priceMinorSek": 1000,
+          "priceLabel": "10 SEK / h"
+        },
+        {
+          "dayType": "pre_holiday_weekday",
+          "startLocalTime": "11:00",
+          "endLocalTime": "17:00",
+          "priceMinorSek": 1000,
+          "priceLabel": "10 SEK / h"
+        },
+        {
+          "dayType": "off_peak",
+          "startLocalTime": "19:00",
+          "endLocalTime": "07:00",
+          "priceMinorSek": 0,
+          "priceLabel": "Ingen avgift"
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "label": "Taxeområde 5",
+      "visitorParking": [
+        {
+          "dayType": "weekday",
+          "startLocalTime": "07:00",
+          "endLocalTime": "19:00",
+          "priceMinorSek": 500,
+          "priceLabel": "5 SEK / h"
+        },
+        {
+          "dayType": "off_peak",
+          "startLocalTime": "19:00",
+          "endLocalTime": "07:00",
+          "priceMinorSek": 0,
+          "priceLabel": "Ingen avgift"
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "label": "Taxeområde 9",
+      "visitorParking": [
+        {
+          "dayType": "weekday",
+          "startLocalTime": "07:00",
+          "endLocalTime": "22:00",
+          "priceMinorSek": 1000,
+          "priceLabel": "10 SEK / h"
+        },
+        {
+          "dayType": "pre_holiday_weekday",
+          "startLocalTime": "07:00",
+          "endLocalTime": "22:00",
+          "priceMinorSek": 1000,
+          "priceLabel": "10 SEK / h"
+        },
+        {
+          "dayType": "holiday",
+          "startLocalTime": "07:00",
+          "endLocalTime": "22:00",
+          "priceMinorSek": 1000,
+          "priceLabel": "10 SEK / h"
+        },
+        {
+          "dayType": "off_peak",
+          "startLocalTime": "22:00",
+          "endLocalTime": "07:00",
+          "priceMinorSek": 0,
+          "priceLabel": "Ingen avgift"
+        }
+      ]
+    }
+  ]
+}
